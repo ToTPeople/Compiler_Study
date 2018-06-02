@@ -1,0 +1,19 @@
+## 环境
+Mac   : 10.12.6
+XCode : 9.2
+
+## 文件说明
+tolua_lib : 编译tolua静态库
+tolua_exe : 编译tolua可执行文件
+
+## code
+tolua源码：
+	https://github.com/waltervn/toluapp
+
+lua源码(5.3.4)：(编译时，修改了些相关Android不支持代码，具体可自行对比源码)
+	https://www.lua.org/ftp/
+
+## 编译方法
+使用XCode打开工程直接编译
+
+

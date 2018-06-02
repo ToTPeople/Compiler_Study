@@ -1,0 +1,41 @@
+## 环境
+Mac : 10.12.6
+NDK : r14b
+
+## 编译说明
+ndk toolchain + make
+
+## ndk版本
+r14b
+
+## platform
+android-21/arch-arm
+android-21/arch-arm64
+android-21/arch-mips
+android-21/arch-mips64
+android-21/arch-x86
+android-21/arch-x86_64
+
+## tolua版本
+https://github.com/waltervn/toluapp
+
+## lua版本
+lua5.3.4
+https://www.lua.org/ftp/
+
+##编译方法
+1、使用脚本product_ndk_toolchains.sh生成对应ndk toolchains；
+2、编写Makefile文件；
+3、make编译；
+
+## 参照
+1、如何生成toolchains
+https://blog.csdn.net/jasonwang18/article/details/55510469
+https://developer.android.com/ndk/guides/standalone_toolchain
+2、编译
+http://blog.51cto.com/ticktick/1432140
+
+## 疑问
+1、还未知如何指定架构，编译出来的应该是默认的架构(flags参数也有关系)；
+2、Makefile编写使用不同toolchains编译时，不知道如何使用循环，暂需要一个个编译；
+

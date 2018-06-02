@@ -1,0 +1,27 @@
+## 环境
+Mac : 10.12.6
+NDK : r14b
+
+## compiler
+以tolua++为例，编译Android平台下arm、x86架构静态库
+其中：
+ndk版本：
+	r14b
+tolua源码：
+	https://github.com/waltervn/toluapp
+
+lua源码(5.3.4)：(编译时，修改了些相关Android不支持代码，具体可自行对比源码)
+	https://www.lua.org/ftp/
+
+## how-to-use
+包装编译出来的静态库，供其他项目使用
+
+## 编译方法
+命令行切到compiler目录，执行ndk-build命令即可生成对应的静态库：
+cd [the path to]/compiler (in your computer)
+ndk-build
+
+## 参照
+https://www.jianshu.com/p/e308cbe1a477
+http://hubingforever.blog.163.com/blog/static/171040579201152185542166/
+
